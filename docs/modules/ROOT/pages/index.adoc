@@ -1,0 +1,8 @@
+= Facade Service
+
+https://travis-ci.org/restorecommerce/facade-srv?branch=master[image:http://img.shields.io/travis/restorecommerce/facade-srv/master.svg?style=flat-square[Build Status]]
+https://david-dm.org/restorecommerce/facade-srv[image:https://img.shields.io/david/restorecommerce/facade-srv.svg?style=flat-square[Dependencies]]
+https://coveralls.io/github/restorecommerce/facade-srv?branch=master[image:http://img.shields.io/coveralls/restorecommerce/facade-srv/master.svg?style=flat-square[Coverage Status]]
+
+A microservice to serve as a facade for all other microservices.
+

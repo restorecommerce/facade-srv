@@ -1,0 +1,4 @@
+[submodule "libs"]
+	path = libs
+	url = https://github.com/restorecommerce/libs.git
+	branch = build-fixes

@@ -1,0 +1,2 @@
+// INDEX
+* xref:index.adoc[Facade Service]

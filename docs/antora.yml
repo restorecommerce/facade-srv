@@ -1,0 +1,5 @@
+name: facade-srv
+title: Facade Service
+version: master
+nav:
+  - modules/ROOT/nav.adoc
