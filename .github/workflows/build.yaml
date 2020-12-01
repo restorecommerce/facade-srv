@@ -15,7 +15,7 @@ jobs:
           node-version: '12.18'
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm ci && npm run install-libs && npm run build-libs
 
       - name: Build
         run: npm run build
