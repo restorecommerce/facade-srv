@@ -59,7 +59,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec 'ts-node' src/index.ts",
     "lint": "eslint src --ext .ts",
-    "postinstall": "cd libs && npm install",
+    "install-libs": "cd libs && npm install",
     "start": "node dist/index.js",
     "test": "jest"
   },
