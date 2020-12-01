@@ -17,7 +17,11 @@ COPY package-lock.json package-lock.json
 ### Build
 FROM base as build
 
-RUN npm ci && npm run install-libs && npm run build-libs
+RUN npm ci
+
+COPY --chown=node:node libs libs
+
+RUN npm run install-libs && npm run build-libs
 
 COPY --chown=node:node . .
 
@@ -31,6 +35,7 @@ RUN npm ci --only=production
 
 COPY cfg $APP_HOME/cfg
 COPY --from=build $APP_HOME/lib $APP_HOME/lib
+COPY --from=build $APP_HOME/libs $APP_HOME/libs
 
 EXPOSE 50051
 
