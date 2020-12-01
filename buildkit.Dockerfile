@@ -17,7 +17,7 @@ COPY package-lock.json package-lock.json
 ### Build
 FROM base as build
 
-RUN npm ci
+RUN npm ci && npm run install-libs && npm run build-libs
 
 COPY --chown=node:node . .
 
@@ -29,11 +29,7 @@ FROM base as deployment
 
 RUN npm ci --only=production
 
-COPY setupTopics.js $APP_HOME/setupTopics.js
-# COPY filter_ownership.aql $APP_HOME/filter_ownership.aql
-# COPY filter_role_association.aql $APP_HOME/filter_role_association.aql
 COPY cfg $APP_HOME/cfg
-# COPY templates $APP_HOME/templates
 COPY --from=build $APP_HOME/lib $APP_HOME/lib
 
 EXPOSE 50051
