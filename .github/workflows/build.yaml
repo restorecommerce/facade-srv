@@ -55,7 +55,7 @@ jobs:
         working-directory: libs
 
       - name: Test
-        run: npm run test && npm run lcov-report
+        run: npm run test
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
