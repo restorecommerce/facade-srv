@@ -1,13 +1,29 @@
 import { ServiceConfig } from '@restorecommerce/service-config';
 import { Logger } from '@restorecommerce/logger';
-import { createFacade, Facade, identityModule, reqResLogger } from '../libs/packages/facade/dist';
+import {
+  createFacade,
+  Facade,
+  reqResLogger,
+  resourceModule,
+  identityModule,
+  accessControlModule,
+  fulfillmentModule,
+  catalogModule,
+  indexingModule,
+  invoicingModule,
+  notificationModule,
+  orderingModule,
+  ostorageModule,
+  paymentModule,
+  schedulingModule
+} from '../libs/packages/facade/dist';
 
 export class Worker {
 
   readonly cfg: ServiceConfig;
   readonly logger: Logger;
 
-  facade: Facade;
+  facade: Facade<any[]>;
 
   constructor(cfg: ServiceConfig, logger: Logger) {
     this.cfg = cfg;
@@ -19,21 +35,27 @@ export class Worker {
   }
 
   async start(): Promise<void> {
-    const cfg = {
-      env: this.cfg.get('NODE_ENV'),
-      logger: this.cfg.get('logger'),
-      facade: this.cfg.get('facade'),
-      identity: this.cfg.get('identity'),
-    };
-
     this.facade = createFacade({
-      ...cfg.facade,
-      env: cfg.env,
+      ...this.cfg.get('facade'),
+      env: this.cfg.get('NODE_ENV'),
       logger: this.logger,
-    }).useModule(identityModule(cfg.identity))
-      .useMiddleware(reqResLogger({
-        logger: this.logger
-      }));
+    })
+      .useModule(identityModule({
+        identitySrvClientConfig: this.cfg.get('identity').client,
+        config: this.cfg.get('identity')
+      }))
+      .useModule(resourceModule({config: this.cfg.get('resource')}))
+      .useModule(accessControlModule({config: this.cfg.get('access_control')}))
+      .useModule(fulfillmentModule({config: this.cfg.get('fulfillment')}))
+      .useModule(catalogModule({config: this.cfg.get('catalog')}))
+      .useModule(indexingModule({config: this.cfg.get('indexing')}))
+      .useModule(invoicingModule({config: this.cfg.get('invoicing')}))
+      .useModule(notificationModule({config: this.cfg.get('notification')}))
+      .useModule(orderingModule({config: this.cfg.get('ordering')}))
+      .useModule(ostorageModule({config: this.cfg.get('ostorage')}))
+      .useModule(paymentModule({config: this.cfg.get('payment')}))
+      .useModule(schedulingModule({config: this.cfg.get('scheduling')}))
+      .useMiddleware(reqResLogger({logger: this.logger}));
 
     return this.facade.start();
   }
