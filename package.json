@@ -1,6 +1,6 @@
 {
   "name": "@restorecommerce/facade-srv",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Restorecommerce facade service",
   "main": "dist/start.js",
   "author": "n-fuse GmbH",
@@ -61,8 +61,7 @@
     "install-libs": "cd libs && npm install",
     "build-libs": "cd libs && npm run build",
     "start": "node dist/index.js",
-    "test": "jest",
-    "postinstall": "npm run install-libs && npm run build-libs"
+    "test": "jest"
   },
   "engines": {
     "node": ">= 12.0.0"
