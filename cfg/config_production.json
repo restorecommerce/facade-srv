@@ -1,0 +1,73 @@
+{
+  "facade": {
+    "hostname": "0.0.0.0"
+  },
+  "resources": {
+    "client": {
+      "address": "resource-srv:50051"
+    }
+  },
+  "identity": {
+    "client": {
+      "address": "identity-srv:50051"
+    }
+  },
+  "ordering": {
+    "client": {
+      "address": "ordering-srv:50051"
+    }
+  },
+  "payment": {
+    "client": {
+      "address": "payment-srv:50051"
+    }
+  },
+  "resource": {
+    "client": {
+      "address": "resource-srv:50051"
+    },
+    "root": false
+  },
+  "catalog": {
+    "client": {
+      "address": "catalog-srv:50051"
+    },
+    "root": false
+  },
+  "invoicing": {
+    "client": {
+      "address": "invoicing-srv:50051"
+    }
+  },
+  "fulfillment": {
+    "client": {
+      "address": "fulfillment-srv:50051"
+    }
+  },
+  "indexing": {
+    "client": {
+      "address": "indexing-srv:50051"
+    }
+  },
+  "scheduling": {
+    "client": {
+      "address": "scheduling-srv:50051"
+    }
+  },
+  "notification": {
+    "client": {
+      "address": "notification-srv:50051"
+    }
+  },
+  "access_control": {
+    "client": {
+      "address": "access-control-srv:50051"
+    },
+    "root": false
+  },
+  "ostorage": {
+    "client": {
+      "address": "ostorage-srv:50051"
+    }
+  }
+}

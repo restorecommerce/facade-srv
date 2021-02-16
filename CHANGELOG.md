@@ -1,3 +1,7 @@
+### 0.1.3 (February 16, 2021)
+
+- create production config
+
 ### 0.1.2 (February 16, 2021)
 
 - remove postinstall script
