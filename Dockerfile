@@ -1,8 +1,9 @@
-FROM node:12.18.3-stretch
+FROM node:14.15.5-stretch
 ENV HOME=/home/node
 ENV APP_HOME=/home/node/facade-srv
 ENV NO_UPDATE_NOTIFIER=true
 ## SETTING UP THE APP ##
+RUN npm install -g npm
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 RUN cd $APP_HOME
