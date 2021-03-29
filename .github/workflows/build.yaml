@@ -45,7 +45,7 @@ jobs:
         with:
           backing-only: false
           shutdown: |
-            facade
+            facade-srv
 
       - name: Install Dependencies
         run: npm ci
