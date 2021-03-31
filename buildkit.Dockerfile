@@ -5,7 +5,7 @@ FROM node:14.15.5-alpine as base
 ENV NO_UPDATE_NOTIFIER=true
 RUN npm install -g typescript@3.4.1
 
-RUN apk add --no-cache git
+RUN apk add --no-cache git python3
 RUN npm install -g npm
 USER node
 ARG APP_HOME=/home/node/srv
