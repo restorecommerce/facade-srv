@@ -5,7 +5,7 @@ FROM node:14.15.5-alpine as base
 ENV NO_UPDATE_NOTIFIER=true
 RUN npm install -g typescript@3.4.1
 
-RUN apk add --no-cache git python3
+RUN apk add --no-cache git
 RUN npm install -g npm
 USER node
 ARG APP_HOME=/home/node/srv
@@ -22,7 +22,7 @@ RUN npm ci
 
 COPY --chown=node:node libs libs
 
-RUN npm run install-libs && npm run build-libs
+RUN npm run libs:install && npm run libs:build
 
 COPY --chown=node:node . .
 

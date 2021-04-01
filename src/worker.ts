@@ -1,5 +1,5 @@
 import { ServiceConfig } from '@restorecommerce/service-config';
-import { Logger } from '@restorecommerce/logger';
+import { Logger } from 'winston';
 import {
   createFacade,
   Facade,
