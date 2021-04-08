@@ -12,5 +12,8 @@
       "tsConfig": "tsconfig.test.json"
     }
   },
-  "testRegex": "test/.*\\.spec\\.ts"
+  "testRegex": "test/.*\\.spec\\.ts",
+  "moduleNameMapper": {
+    "^jose/(.*)$": "<rootDir>/libs/packages/facade/node_modules/jose/dist/node/cjs/$1"
+  }
 }
