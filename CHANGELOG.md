@@ -1,3 +1,12 @@
+### 0.1.5 (April 9th, 2021)
+
+- abstraction for CRUD for create, update and upsert (Mutate) with mode parameter
+- introduced sub structure name space for missing services
+
+### 0.1.4 (April 1st, 2021)
+
+- Update dependencies, fix image build
+
 ### 0.1.3 (February 16, 2021)
 
 - create production config
