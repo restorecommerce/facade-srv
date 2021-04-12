@@ -11,6 +11,6 @@ coverage/
 *.log
 *~
 
-buildImageBuildkit.bash
-buildkit.Dockerfile
-buildkit.dockerignore
+buildImage.bash
+Dockerfile
+.dockerignore
