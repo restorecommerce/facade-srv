@@ -1,3 +1,7 @@
+### 0.1.7 (April 12th, 2021)
+
+- updated sub modules
+
 ### 0.1.6 (April 12th, 2021)
 
 - added api-key
