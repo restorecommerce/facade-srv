@@ -18,6 +18,7 @@
       "address": "127.0.0.1:50053"
     }
   },
+  "apiKey": "dbcccf4037d64a6194db7dd3237ce6d3",
   "identity": {
     "client": {
       "address": "127.0.0.1:50051"
@@ -80,5 +81,43 @@
     "client": {
       "address": "127.0.0.1:50066"
     }
+  },
+  "events": {
+    "kafka": {
+      "provider": "kafka",
+      "groupId": "facade-srv",
+      "clientId": "facade-srv",
+      "kafkaHost": "localhost:29092",
+      "latestOffset": false,
+      "setApiKeyCommand": {
+        "protos": [
+          "io/restorecommerce/commandinterface.proto"
+        ],
+        "protoRoot": "libs/packages/protos/",
+        "messageObject": "io.restorecommerce.commandinterface.CommandRequest"
+      },
+      "setApiKeyResponse": {
+        "protos": [
+          "io/restorecommerce/commandinterface.proto"
+        ],
+        "protoRoot": "libs/packages/protos/",
+        "messageObject": "io.restorecommerce.commandinterface.CommandResponse"
+      },
+      "configUpdateCommand": {
+        "protos": [
+          "io/restorecommerce/commandinterface.proto"
+        ],
+        "protoRoot": "libs/packages/protos/",
+        "messageObject": "io.restorecommerce.commandinterface.CommandRequest"
+      },
+      "configUpdateResponse": {
+        "protos": [
+          "io/restorecommerce/commandinterface.proto"
+        ],
+        "protoRoot": "libs/packages/protos/",
+        "messageObject": "io.restorecommerce.commandinterface.CommandResponse"
+      }
+    },
+    "enableEvents": "true"
   }
 }

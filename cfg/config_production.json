@@ -69,5 +69,10 @@
     "client": {
       "address": "ostorage-srv:50051"
     }
+  },
+  "events": {
+    "kafka": {
+      "kafkaHost": "kafka:9092"
+    }
   }
 }

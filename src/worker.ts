@@ -42,7 +42,8 @@ export class Worker {
     })
       .useModule(identityModule({
         identitySrvClientConfig: this.cfg.get('identity').client,
-        config: this.cfg.get('identity')
+        config: this.cfg.get('identity'),
+        apiKey: this.cfg.get('apiKey')
       }))
       .useModule(resourceModule({config: this.cfg.get('resource')}))
       .useModule(accessControlModule({config: this.cfg.get('access_control')}))
