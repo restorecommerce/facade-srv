@@ -1,3 +1,7 @@
+### 0.1.6 (April 12th, 2021)
+
+- added api-key
+
 ### 0.1.5 (April 9th, 2021)
 
 - abstraction for CRUD for create, update and upsert (Mutate) with mode parameter
