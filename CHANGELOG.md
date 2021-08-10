@@ -1,3 +1,7 @@
+## 0.2.0 (August 10th, 2021)
+
+- updated libs sub modules
+
 ### 0.1.7 (April 12th, 2021)
 
 - updated sub modules
