@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Install and build libs
-        run: npm install && npm run build
+        run: npm install:all && npm run build
         working-directory: libs
 
       - name: Build
@@ -51,7 +51,7 @@ jobs:
         run: npm ci
 
       - name: Install and build libs
-        run: npm install && npm run build
+        run: npm install:all && npm run build
         working-directory: libs
 
       - name: Test
