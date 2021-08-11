@@ -1,3 +1,7 @@
+## 0.2.1 (August 11th, 2021)
+
+- updated build and Docker file
+
 ## 0.2.0 (August 10th, 2021)
 
 - updated libs sub modules
