@@ -16,7 +16,7 @@ import {
   ostorageModule,
   paymentModule,
   schedulingModule
-} from '../libs/packages/facade/dist';
+} from '@restorecommerce/facade';
 
 export class Worker {
 

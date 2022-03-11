@@ -21,10 +21,6 @@ FROM base as build
 
 RUN npm ci
 
-COPY --chown=node:node libs libs
-
-RUN npm run libs:install && npm run libs:build
-
 COPY --chown=node:node . .
 
 RUN npm run build
@@ -37,7 +33,6 @@ RUN npm ci --only=production
 
 COPY cfg $APP_HOME/cfg
 COPY --from=build $APP_HOME/dist $APP_HOME/dist
-COPY --from=build $APP_HOME/libs $APP_HOME/libs
 
 EXPOSE 5000
 

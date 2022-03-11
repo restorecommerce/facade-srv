@@ -17,14 +17,18 @@
     "srv"
   ],
   "dependencies": {
-    "@restorecommerce/cluster-service": "^0.1.9",
-    "@restorecommerce/logger": "^0.10.4",
-    "@restorecommerce/service-config": "^0.4.14",
+    "@apollo/federation": "^0.35.1",
+    "@restorecommerce/facade": "^0.3.6",
+    "@restorecommerce/logger": "^0.12.1",
+    "@restorecommerce/protos": "^0.6.4",
+    "@restorecommerce/service-config": "^0.4.25",
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.1",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "ts-proto-descriptors": "1.2.0",
+    "winston": "^3.6.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
@@ -56,10 +60,6 @@
     "build:tsc": "tsc -d",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "libs": "run-s libs:clean libs:install libs:build",
-    "libs:build": "cd libs && npm run build",
-    "libs:clean": "cd libs && git clean -dfX",
-    "libs:install": "cd libs && npm run install:all",
     "lint": "eslint src --ext .ts",
     "start": "node dist/index.js",
     "test": "jest"
