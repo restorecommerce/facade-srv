@@ -20,7 +20,7 @@
     "@apollo/federation": "^0.35.1",
     "@restorecommerce/facade": "^0.3.6",
     "@restorecommerce/logger": "^0.12.1",
-    "@restorecommerce/protos": "^0.6.4",
+    "@restorecommerce/protos": "^0.6.9",
     "@restorecommerce/service-config": "^0.4.25",
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",
