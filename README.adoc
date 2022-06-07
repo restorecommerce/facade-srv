@@ -1,8 +1,8 @@
 = Facade Service
 
 image:https://github.com/restorecommerce/facade-srv/workflows/build/badge.svg[Build Status]
-https://david-dm.org/restorecommerce/facade-srv[image:https://img.shields.io/david/restorecommerce/facade-srv.svg?style=flat-square[Dependencies]]
-https://coveralls.io/github/restorecommerce/facade-srv?branch=master[image:http://img.shields.io/coveralls/restorecommerce/facade-srv/master.svg?style=flat-square[Coverage Status]]
+https://depfu.com/repos/github/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/depfu/dependencies/github/restorecommerce/facade-srv?style=flat-square[Dependencies]]
+https://coveralls.io/github/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/coveralls/github/restorecommerce/facade-srv/master.svg?style=flat-square[Coverage Status]]
 
 A microservice to serve as a facade for all other microservices.
 
