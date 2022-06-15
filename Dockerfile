@@ -32,7 +32,7 @@ FROM base as deployment
 RUN npm ci --only=production
 
 COPY cfg $APP_HOME/cfg
-COPY --from=build $APP_HOME/dist $APP_HOME/dist
+COPY --from=build $APP_HOME/lib $APP_HOME/lib
 
 EXPOSE 5000
 

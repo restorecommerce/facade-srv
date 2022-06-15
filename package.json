@@ -2,7 +2,7 @@
   "name": "@restorecommerce/facade-srv",
   "version": "0.2.1",
   "description": "Restorecommerce facade service",
-  "main": "dist/start.js",
+  "main": "lib/start.js",
   "author": "n-fuse GmbH",
   "repository": {
     "type": "git",
@@ -57,12 +57,12 @@
   },
   "scripts": {
     "build": "npm-run-all lint build:clean build:tsc",
-    "build:clean": "rimraf dist",
+    "build:clean": "rimraf lib",
     "build:tsc": "tsc -d",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec 'ts-node' src/index.ts",
     "lint": "eslint src --ext .ts",
-    "start": "node dist/index.js",
+    "start": "node lib/index.js",
     "test": "jest"
   },
   "engines": {

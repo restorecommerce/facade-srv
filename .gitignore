@@ -10,7 +10,7 @@ pid/
 .nyc_output
 .idea
 
-dist
+lib
 
 *.log
 *~
