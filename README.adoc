@@ -1,6 +1,6 @@
 = Facade Service
 
-image:https://github.com/restorecommerce/facade-srv/workflows/build/badge.svg[Build Status]
+https://travis-ci.org/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/travis/restorecommerce/facade-srv/master.svg?style=flat-square[Build Status]]
 https://depfu.com/repos/github/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/depfu/dependencies/github/restorecommerce/facade-srv?style=flat-square[Dependencies]]
 https://coveralls.io/github/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/coveralls/github/restorecommerce/facade-srv/master.svg?style=flat-square[Coverage Status]]
 
