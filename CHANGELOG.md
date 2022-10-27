@@ -1,3 +1,8 @@
+## 1.0.0 (October 27th, 2021)
+
+- fully typed client and server typings
+- up deps
+
 ## 0.2.1 (August 11th, 2021)
 
 - updated build and Docker file
