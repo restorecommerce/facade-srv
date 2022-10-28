@@ -38,10 +38,6 @@ jobs:
 
       - name: Setup System
         uses: restorecommerce/setup-system-action@v1
-        with:
-          backing-only: false
-          shutdown: |
-            facade-srv
 
       - name: Install Dependencies
         run: npm ci
