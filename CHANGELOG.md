@@ -1,4 +1,8 @@
-## 1.0.0 (October 27th, 2021)
+## 1.0.1 (October 28th, 2022)
+
+- fixed package lock
+
+## 1.0.0 (October 27th, 2022)
 
 - fully typed client and server typings
 - up deps
