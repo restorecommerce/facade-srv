@@ -1,3 +1,7 @@
+## 1.0.2 (November 16th, 2022)
+
+- updated dependencies for facade module
+
 ## 1.0.1 (October 28th, 2022)
 
 - fixed package lock
