@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
-    "module": "commonjs",
+    "target": "ES6",
+    "module": "ESNext",
     "incremental": true,
     "diagnostics": false,
-    "moduleResolution": "node",
+    "moduleResolution": "Node16",
     "declaration": true,
     // "strict": true,
     "emitDecoratorMetadata": true,
@@ -22,6 +22,11 @@
       "es2020.promise",
       "dom"
     ]
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "experimentalResolver": true
   },
   "include": [
     "./src/**/*.ts"
