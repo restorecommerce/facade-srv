@@ -8,6 +8,7 @@ module.exports = {
   'parserOptions': {
     'project': [
       'tsconfig.json',
+      'tsconfig.test.json',
     ],
     'sourceType': 'module'
   },
