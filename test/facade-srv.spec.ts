@@ -1,5 +1,5 @@
-import { Worker } from '../src/worker';
-import { createTestWorker } from './worker';
+import { Worker } from '../lib/worker.js';
+import { createTestWorker } from './worker.js';
 
 describe('facade-srv', () => {
   let worker: Worker;
