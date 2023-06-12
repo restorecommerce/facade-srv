@@ -1,5 +1,8 @@
 import { type Worker } from '../src/worker.js';
 import { createTestWorker } from './worker.js';
+import { jest } from '@jest/globals';
+
+jest.useFakeTimers();
 
 describe('facade-srv', () => {
   let worker: Worker;
