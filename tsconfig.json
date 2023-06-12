@@ -27,13 +27,5 @@
     "transpileOnly": true,
     "files": true,
     "experimentalResolver": true
-  },
-  "include": [
-    "./src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "lib",
-    "doc"
-  ]
+  }
 }

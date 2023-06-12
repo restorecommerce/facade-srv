@@ -1,4 +1,4 @@
-import { Worker } from '../lib/worker.js';
+import { type Worker } from '../src/worker.js';
 import { createTestWorker } from './worker.js';
 
 describe('facade-srv', () => {
@@ -7,8 +7,8 @@ describe('facade-srv', () => {
   beforeAll(async () => {
     worker = createTestWorker();
     await worker.start().catch(err => {
-      worker.logger.error('Error starting worker: ', {err})
-    })
+      worker.logger.error('Error starting worker: ', {err});
+    });
   });
 
   it('should start the worker', () => {
@@ -18,5 +18,5 @@ describe('facade-srv', () => {
 
   afterAll(async () => {
     worker && await worker.stop();
-  })
-})
+  });
+});

@@ -1,4 +1,4 @@
-import { Worker } from '../src/worker';
+import { Worker } from '../src/worker.js';
 import { createServiceConfig } from '@restorecommerce/service-config';
 import { createLogger } from '@restorecommerce/logger';
 

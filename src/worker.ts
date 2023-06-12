@@ -1,8 +1,8 @@
-import { ServiceConfig } from '@restorecommerce/service-config';
-import { Logger } from 'winston';
+import { type ServiceConfig } from '@restorecommerce/service-config';
+import { type Logger } from 'winston';
 import {
   createFacade,
-  Facade,
+  type Facade,
   reqResLogger,
   resourceModule,
   identityModule,
