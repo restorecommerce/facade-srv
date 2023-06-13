@@ -67,7 +67,7 @@
     "build:clean": "rimraf lib",
     "build:tsc": "tsc -p tsconfig.json",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec 'ts-node-esm' src/index.ts",
     "lint": "eslint './**/*.ts'",
     "start": "ts-node-esm ./src/index.ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand --testTimeout=30000",
