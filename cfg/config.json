@@ -108,5 +108,9 @@
       }
     },
     "enableEvents": "true"
+  },
+  "fileUploadOptions": {
+    "maxFileSize": 100000000,
+    "maxFiles": 20
   }
 }

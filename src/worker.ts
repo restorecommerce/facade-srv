@@ -39,14 +39,15 @@ export class Worker {
       ...this.cfg.get('facade'),
       env: this.cfg.get('NODE_ENV'),
       logger: this.logger,
-      kafka: this.cfg.get('events:kafka')
+      kafka: this.cfg.get('events:kafka'),
+      fileUploadOptions: this.cfg.get('fileUploadOptions')
     })
       .useModule(identityModule({
         identitySrvClientConfig: this.cfg.get('identity').client,
         config: this.cfg.get('identity'),
         apiKey: this.cfg.get('apiKey')
       }))
-      .useModule(resourceModule({config: this.cfg.get('resource')}))
+      .useModule(resourceModule({config: this.cfg.get('master_data')}))
       .useModule(accessControlModule({config: this.cfg.get('access_control')}))
       .useModule(fulfillmentModule({config: this.cfg.get('fulfillment')}))
       .useModule(catalogModule({config: this.cfg.get('catalog')}))
