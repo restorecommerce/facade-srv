@@ -64,7 +64,6 @@
     "build": "npm-run-all lint build:clean build:tsc",
     "build:clean": "rimraf lib",
     "build:tsc": "tsc -p tsconfig.json",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec 'ts-node-esm' src/index.ts",
     "lint": "eslint './**/*.ts'",
     "start": "ts-node-esm ./src/index.ts",
@@ -72,6 +71,6 @@
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts"
   },
   "engines": {
-    "node": ">= 16.0.0"
+    "node": ">= 18.0.0"
   }
 }
