@@ -86,9 +86,9 @@
     "kafka": {
       "provider": "kafka",
       "groupId": "facade-srv",
-      "clientId": "facade-srv",
+      "clientId": "restorecommerce-facade-srv",
       "kafka": {
-        "clientId": "abc-facade-srv",
+        "clientId": "restorecommerce-facade-srv",
         "brokers": [
           "localhost:29092"
         ]

@@ -1,3 +1,10 @@
+## 1.0.3 (June 20th, 2022)
+
+- move facade-srv to esm
+- fix file upload and download
+- renamed resource to master_data namespace and added fileUpload options to configuration
+- updated all dependencies
+
 ## 1.0.2 (November 16th, 2022)
 
 - updated dependencies for facade module
