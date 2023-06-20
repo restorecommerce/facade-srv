@@ -64,6 +64,7 @@
     "build": "npm-run-all lint build:clean build:tsc",
     "build:clean": "rimraf lib",
     "build:tsc": "tsc -p tsconfig.json",
+    "lcov-report": "nyc report --reporter=lcov",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec 'ts-node-esm' src/index.ts",
     "lint": "eslint './**/*.ts'",
     "start": "ts-node-esm ./src/index.ts",
