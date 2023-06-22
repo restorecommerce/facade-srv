@@ -2,7 +2,7 @@
   "facade": {
     "hostname": "0.0.0.0"
   },
-  "resources": {
+  "master_data": {
     "client": {
       "address": "resource-srv:50051"
     }

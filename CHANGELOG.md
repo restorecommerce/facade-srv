@@ -1,3 +1,7 @@
+## 1.0.4 (June 22nd, 2022)
+
+- corrected config for renaming resources to master_data
+
 ## 1.0.3 (June 20th, 2022)
 
 - move facade-srv to esm
