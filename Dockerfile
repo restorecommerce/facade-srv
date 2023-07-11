@@ -32,6 +32,8 @@ RUN npm ci --only=production
 
 COPY cfg $APP_HOME/cfg
 COPY --from=build $APP_HOME/lib $APP_HOME/lib
+COPY tsconfig.json tsconfig.json
+COPY src $APP_HOME/src
 
 EXPOSE 5000
 
