@@ -1,3 +1,7 @@
+## 1.0.7 (July 22nd, 2023)
+
+- add sample oidc credentials
+
 ## 1.0.6 (July 22nd, 2023)
 
 - fix docker image
