@@ -1,3 +1,7 @@
+## 1.0.6 (July 22nd, 2023)
+
+- fix docker image
+
 ## 1.0.5 (July 22nd, 2023)
 
 - add oidc config option
