@@ -1,8 +1,13 @@
-## 1.0.4 (June 22nd, 2022)
+## 1.0.5 (July 22nd, 2023)
+
+- add oidc config option
+- bump facade lib dependency
+
+## 1.0.4 (June 22nd, 2023)
 
 - corrected config for renaming resources to master_data
 
-## 1.0.3 (June 20th, 2022)
+## 1.0.3 (June 20th, 2023)
 
 - move facade-srv to esm
 - fix file upload and download
