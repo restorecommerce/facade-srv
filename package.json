@@ -69,7 +69,7 @@
     "lint": "eslint './**/*.ts'",
     "start": "ts-node-esm ./src/index.ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand --testTimeout=30000",
-    "coverage": "nyc npm run test",
+    "coverage": "nyc npm run test && npm run lcov-report",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts"
   },
   "engines": {
