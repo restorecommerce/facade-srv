@@ -2,8 +2,6 @@
 FROM node:18.14.0-alpine as base
 ENV NO_UPDATE_NOTIFIER=true
 
-RUN npm install -g lerna
-
 RUN apk add --no-cache git
 RUN apk add g++ make python3
 
