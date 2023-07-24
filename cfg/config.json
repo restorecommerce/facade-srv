@@ -56,11 +56,6 @@
       "address": "127.0.0.1:50067"
     }
   },
-  "indexing": {
-    "client": {
-      "address": "127.0.0.1:50064"
-    }
-  },
   "scheduling": {
     "client": {
       "address": "127.0.0.1:50054"

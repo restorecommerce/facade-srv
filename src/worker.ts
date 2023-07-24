@@ -9,7 +9,6 @@ import {
   accessControlModule,
   fulfillmentModule,
   catalogModule,
-  indexingModule,
   invoicingModule,
   notificationModule,
   orderingModule,
@@ -52,7 +51,6 @@ export class Worker {
       .useModule(accessControlModule({config: this.cfg.get('access_control')}))
       .useModule(fulfillmentModule({config: this.cfg.get('fulfillment')}))
       .useModule(catalogModule({config: this.cfg.get('catalog')}))
-      .useModule(indexingModule({config: this.cfg.get('indexing')}))
       .useModule(invoicingModule({config: this.cfg.get('invoicing')}))
       .useModule(notificationModule({config: this.cfg.get('notification')}))
       .useModule(orderingModule({config: this.cfg.get('ordering')}))
