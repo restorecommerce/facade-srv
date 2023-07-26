@@ -39,7 +39,8 @@ export class Worker {
       env: this.cfg.get('NODE_ENV'),
       logger: this.logger,
       kafka: this.cfg.get('events:kafka'),
-      fileUploadOptions: this.cfg.get('fileUploadOptions')
+      fileUploadOptions: this.cfg.get('fileUploadOptions'),
+      jsonLimit: this.cfg.get('koa:bodyParser:jsonLimit'),
     })
       .useModule(identityModule({
         identitySrvClientConfig: this.cfg.get('identity').client,

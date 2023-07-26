@@ -159,5 +159,10 @@
         }
       ]
     }
+  },
+  "koa": {
+    "bodyParser": {
+      "jsonLimit": "50mb"
+    }
   }
 }
