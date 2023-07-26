@@ -18,7 +18,7 @@
       "address": "127.0.0.1:50053"
     }
   },
-  "apiKey": "dbcccf4037d64a6194db7dd3237ce6d3",
+  "apiKey": true,
   "identity": {
     "client": {
       "address": "127.0.0.1:50051"

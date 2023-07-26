@@ -1,4 +1,20 @@
 {
+  "logger": {
+    "elasticsearch": {
+      "level": "info",
+      "clientOpts": {
+        "node": "http://elasticsearch:9200"
+      },
+      "dataStream": true,
+      "source": "facade-srv"
+    },
+    "console": {
+      "handleExceptions": false,
+      "level": "debug",
+      "colorize": true,
+      "prettyPrint": true
+    }
+  },
   "facade": {
     "hostname": "0.0.0.0"
   },
