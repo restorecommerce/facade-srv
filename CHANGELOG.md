@@ -1,3 +1,8 @@
+## 1.0.8 (July 26th, 2023)
+
+- fix upload body size limit
+- update dependencies
+
 ## 1.0.7 (July 22nd, 2023)
 
 - add sample oidc credentials
