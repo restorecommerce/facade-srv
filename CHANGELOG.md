@@ -1,3 +1,7 @@
+## 1.0.9 (August 1st, 2023)
+
+- update dependencies
+
 ## 1.0.8 (July 26th, 2023)
 
 - fix upload body size limit
