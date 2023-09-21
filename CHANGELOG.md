@@ -1,3 +1,7 @@
+## 1.1.0 (September 21st, 2023)
+
+- update proto files to set all fields as optionals
+
 ## 1.0.10 (August 3rd, 2023)
 
 - update dependencies
