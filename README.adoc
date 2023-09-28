@@ -1,14 +1,14 @@
 = Facade Service
 
-https://travis-ci.org/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/travis/restorecommerce/facade-srv/master.svg?style=flat-square[Build Status]]
+https://github.com/restorecommerce/facade-srv/actions/workflows/build.yaml[image:https://img.shields.io/github/actions/workflow/status/restorecommerce/facade-srv/build.yaml?style=flat-square[Build Status]]
 https://depfu.com/repos/github/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/depfu/dependencies/github/restorecommerce/facade-srv?style=flat-square[Dependencies]]
 https://coveralls.io/github/restorecommerce/facade-srv?branch=master[image:https://img.shields.io/coveralls/github/restorecommerce/facade-srv/master.svg?style=flat-square[Coverage Status]]
 
-A microservice to serve as a facade for all other microservices.
+A microservice to serve as a facade for other microservices.
 
 Please consult the documentation for using it:
 
 - *link:https://docs.restorecommerce.io/facade-srv/index.html[Usage]*
-- *link:https://docs.restorecommerce.io/architecture/index.html[General Architecture]*
+- *link:https://docs.restorecommerce.io/architecture/index.html[Restorecommerce Architecture]*
 
 Part of link:https://github.com/restorecommerce[Restorecommerce].
