@@ -1,5 +1,5 @@
 ### Base
-FROM node:18.14.0-alpine as base
+FROM node:20.8.0-alpine3.18 as base
 ENV NO_UPDATE_NOTIFIER=true
 
 RUN apk add --no-cache git
