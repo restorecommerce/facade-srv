@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ESNext",
+    "module": "Node16",
     "incremental": true,
     "diagnostics": false,
     "moduleResolution": "Node16",
