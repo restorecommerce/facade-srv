@@ -1,3 +1,7 @@
+## 1.2.1 (October 25h, 2023)
+
+- update dependencies
+
 ## 1.2.0 (October 7th, 2023)
 
 - update node and deps
@@ -5,7 +9,7 @@
 ## 1.1.2 (September 29th, 2023)
 
 - update dependencies
-- 
+
 ## 1.1.1 (September 28th, 2023)
 
 - update dependencies
