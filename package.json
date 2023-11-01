@@ -19,7 +19,7 @@
   "type": "module",
   "dependencies": {
     "@apollo/federation": "^0.38.1",
-    "@apollo/gateway": "^2.5.5",
+    "@apollo/gateway": "^2.5.6",
     "@restorecommerce/facade": "^1.6.8",
     "@restorecommerce/logger": "^1.2.7",
     "@restorecommerce/service-config": "^1.0.9",
