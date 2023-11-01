@@ -1,4 +1,8 @@
-## 1.2.1 (October 25h, 2023)
+## 1.2.2 (November 2nd, 2023)
+
+- update dependencies
+
+## 1.2.1 (October 25th, 2023)
 
 - update dependencies
 
