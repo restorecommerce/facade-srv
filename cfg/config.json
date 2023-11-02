@@ -11,7 +11,13 @@
     "keys": [
       "secret"
     ],
-    "port": 5000
+    "hostname": "0.0.0.0",
+    "port": 5000,
+    "kafka": {
+      "brokers": [
+        "localhost:29092"
+      ]
+    }
   },
   "master_data": {
     "client": {

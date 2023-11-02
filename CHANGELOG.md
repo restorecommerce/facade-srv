@@ -1,3 +1,7 @@
+## 1.2.3 (November 2nd, 2023)
+
+- add details kafka to config
+
 ## 1.2.2 (November 2nd, 2023)
 
 - update dependencies
