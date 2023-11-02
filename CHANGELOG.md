@@ -1,6 +1,10 @@
+## 1.2.4 (November 2nd, 2023)
+
+- read correct kafka field
+
 ## 1.2.3 (November 2nd, 2023)
 
-- add details kafka to config
+- add kafka details to config
 
 ## 1.2.2 (November 2nd, 2023)
 

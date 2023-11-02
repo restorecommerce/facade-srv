@@ -1,6 +1,6 @@
 {
   "name": "@restorecommerce/facade-srv",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Restorecommerce facade service",
   "exports": "./lib/start.js",
   "author": "n-fuse GmbH",

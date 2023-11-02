@@ -38,7 +38,6 @@ export class Worker {
       ...this.cfg.get('facade'),
       env: this.cfg.get('NODE_ENV'),
       logger: this.logger,
-      kafka: this.cfg.get('events:kafka'),
       fileUploadOptions: this.cfg.get('fileUploadOptions'),
       jsonLimit: this.cfg.get('koa:bodyParser:jsonLimit'),
     })
