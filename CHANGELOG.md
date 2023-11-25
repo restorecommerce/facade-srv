@@ -1,3 +1,7 @@
+## 1.2.5 (November 25th, 2023)
+
+- up deps
+
 ## 1.2.4 (November 2nd, 2023)
 
 - read correct kafka field
