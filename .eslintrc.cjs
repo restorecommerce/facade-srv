@@ -47,7 +47,6 @@ module.exports = {
         }
       }
     ],
-    '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-use-before-define': [2, {'functions': true, 'classes': true}],
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/semi': [
@@ -81,15 +80,6 @@ module.exports = {
     'spaced-comment': 'error',
     'unicorn/prefer-module': 'error',
     'unicorn/prefer-node-protocol': 'error',
-    'file-extension-in-import-ts/file-extension-in-import-ts': 'error',
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      {
-        'prefer': 'type-imports',
-        'disallowTypeAnnotations': true,
-        'fixStyle': 'inline-type-imports'
-      }
-    ],
     '@typescript-eslint/consistent-type-exports': [
       'error',
       {

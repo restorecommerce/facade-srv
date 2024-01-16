@@ -1,25 +1,19 @@
-import { type Worker } from '../src/worker.js';
-import { createTestWorker } from './worker.js';
-import { jest } from '@jest/globals';
-
-jest.useFakeTimers();
+import { Worker } from '../src/worker';
+import { createTestWorker } from './worker';
 
 describe('facade-srv', () => {
   let worker: Worker;
-
-  beforeAll(async () => {
+  it('should start the worker', async () => {
     worker = createTestWorker();
-    await worker.start().catch(err => {
-      worker.logger.error('Error starting worker: ', {err});
-    });
+    await worker?.start();
+    expect(worker?.listening).toBe(true);
   });
 
-  it('should start the worker', () => {
-    expect(worker).toBeTruthy();
-    expect(worker.listening).toBe(true);
+  it('should wait for kafka', async () => {
+    await new Promise((resolve, reject) => setTimeout(resolve, 10000));
   });
 
-  afterAll(async () => {
-    worker && await worker.stop();
+  it('should stop the worker', async () => {
+    await worker?.stop();
   });
 });

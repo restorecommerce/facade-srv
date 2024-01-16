@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "Node16",
+    "target": "ES2022",
+    "module": "ES2022",
     "incremental": true,
     "diagnostics": false,
-    "moduleResolution": "Node16",
+    "moduleResolution": "node",
     "declaration": true,
     // "strict": true,
     "emitDecoratorMetadata": true,
@@ -23,9 +23,12 @@
       "dom"
     ]
   },
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true,
-    "experimentalResolver": true
-  }
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "doc"
+  ]
 }

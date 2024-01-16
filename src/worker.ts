@@ -1,8 +1,8 @@
-import { type ServiceConfig } from '@restorecommerce/service-config';
-import { type Logger } from 'winston';
+import { ServiceConfig } from '@restorecommerce/service-config';
+import { Logger } from 'winston';
 import {
   createFacade,
-  type Facade,
+  Facade,
   reqResLogger,
   resourceModule,
   identityModule,
@@ -18,7 +18,6 @@ import {
 } from '@restorecommerce/facade';
 
 export class Worker {
-
   readonly cfg: ServiceConfig;
   readonly logger: Logger;
 
@@ -30,7 +29,7 @@ export class Worker {
   }
 
   get listening() {
-    return this.facade.listening;
+    return this.facade?.listening ?? false;
   }
 
   async start(): Promise<void> {
@@ -59,11 +58,11 @@ export class Worker {
       .useModule(schedulingModule({config: this.cfg.get('scheduling')}))
       .useMiddleware(reqResLogger({logger: this.logger}));
 
-    return this.facade.start();
+    return await this.facade.start();
   }
 
   async stop(): Promise<void> {
-    return this.facade.stop();
+    return await this.facade?.stop();
   }
 
 }

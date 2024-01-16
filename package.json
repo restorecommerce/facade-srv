@@ -34,8 +34,8 @@
     "winston": "^3.11.0"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.10",
-    "@types/mocha": "^10.0.6",
     "@types/node": "^20.10.0",
     "@types/supertest": "^2.0.16",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
@@ -47,7 +47,6 @@
     "eslint-plugin-prefer-arrow-functions": "^3.2.4",
     "eslint-plugin-unicorn": "^49.0.0",
     "jest": "^29.7.0",
-    "mocha": "^10.2.0",
     "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
     "nyc": "^15.1.0",
@@ -67,7 +66,7 @@
     "dev": "cross-env NODE_ENV=development node --loader ts-node/esm ./src/index.ts",
     "lint": "eslint './**/*.ts'",
     "start": "node --loader ts-node/esm ./src/index.ts",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand --testTimeout=30000",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles --runInBand --testTimeout=30000",
     "coverage": "nyc npm run test && npm run lcov-report",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts"
   },
