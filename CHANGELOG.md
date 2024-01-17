@@ -1,3 +1,9 @@
+## 1.3.0 (January 17th, 2024)
+
+- up deps
+- add shop entity
+- add properties to user
+
 ## 1.2.7 (December 9th, 2023)
 
 - up deps
