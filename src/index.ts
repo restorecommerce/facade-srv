@@ -4,7 +4,12 @@ import { createLogger } from '@restorecommerce/logger';
 
 const startServer = () => {
   const cfg = createServiceConfig(process.cwd());
-  const logger = createLogger(cfg.get('logger'));
+  const loggerCfg = cfg.get('logger');
+  loggerCfg.esTransformer = (msg) => {
+    msg.fields = JSON.stringify(msg.fields);
+    return msg;
+  };
+  const logger = createLogger(loggerCfg);
 
   try {
     const worker = new Worker(cfg, logger);
