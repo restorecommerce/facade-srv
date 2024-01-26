@@ -1,3 +1,7 @@
+## 1.3.1 (January 26th, 2024)
+
+- upgrade facade dependency
+
 ## 1.3.0 (January 17th, 2024)
 
 - up deps
