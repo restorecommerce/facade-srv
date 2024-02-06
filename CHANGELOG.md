@@ -1,3 +1,7 @@
+## 1.3.2 (February 6th, 2024)
+
+- bump minor dep versions
+
 ## 1.3.1 (January 26th, 2024)
 
 - upgrade facade dependency
