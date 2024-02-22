@@ -21,7 +21,7 @@ export class Worker {
   readonly cfg: ServiceConfig;
   readonly logger: Logger;
 
-  facade: Facade<any[]>;
+  facade!: Facade<any[]>;
 
   constructor(cfg: ServiceConfig, logger: Logger) {
     this.cfg = cfg;
