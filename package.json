@@ -61,13 +61,13 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "build": "npm-run-all lint build:clean build:tsc",
+    "start": "node lib/start.cjs",
+    "build": "npm-run-all lint build:clean build:es",
     "build:clean": "rimraf lib",
-    "build:tsc": "tsc -p tsconfig.json",
+    "build:es": "esbuild ./src/start.ts --bundle --platform=node --outfile=lib/start.cjs --minify --tree-shaking=true --sourcemap=inline",
     "lcov-report": "nyc report --reporter=lcov",
-    "dev": "cross-env NODE_ENV=development node --loader ts-node/esm ./src/start.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec node --loader ts-node/esm ./src/start.ts",
     "lint": "eslint src --ext .ts",
-    "start": "node --loader ts-node/esm ./src/start.ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles --runInBand --testTimeout=30000",
     "coverage": "c8 npm run test && npm run lcov-report",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts"
