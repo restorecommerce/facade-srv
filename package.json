@@ -36,9 +36,9 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
-    "@restorecommerce/dev": "^0.0.7",
+    "@restorecommerce/dev": "^0.0.8",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.19",
+    "@types/node": "^20.11.24",
     "@types/supertest": "^6.0.2",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/eslint-plugin-tslint": "^7.0.2",
