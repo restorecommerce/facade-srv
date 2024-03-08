@@ -1,3 +1,11 @@
+## 1.4.1 (March 8th, 2024)
+
+- up deps
+
+## 1.4.0 (March 8th, 2024)
+
+- esbuild support
+
 ## 1.3.2 (February 6th, 2024)
 
 - bump minor dep versions
