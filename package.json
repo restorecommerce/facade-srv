@@ -72,7 +72,7 @@
     "start": "node lib/start.cjs",
     "build": "npm-run-all lint build:clean build:es",
     "build:clean": "rimraf lib",
-    "build:es": "esbuild ./src/start.ts --bundle --platform=node --outfile=lib/start.cjs --minify --tree-shaking=true --sourcemap=inline",
+    "build:es": "esbuild ./src/start.ts --bundle --platform=node --outfile=lib/start.cjs --tree-shaking=true --sourcemap=inline",
     "lcov-report": "nyc report --reporter=lcov",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec node --loader ts-node/esm ./src/start.ts",
     "lint": "eslint src --ext .ts",
