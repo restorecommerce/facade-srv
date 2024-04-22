@@ -1,8 +1,10 @@
 {
-  "compilerOptions": {
-    "outDir": "test"
-  },
   "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "node", "@types/jest"],
+    "module": "ESNext",
+    "moduleResolution": "Node10"
+  },
   "include": [
     "./test/**/*.ts"
   ]

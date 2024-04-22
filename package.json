@@ -76,7 +76,7 @@
     "lcov-report": "nyc report --reporter=lcov",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec node --loader ts-node/esm ./src/start.ts",
     "lint": "eslint src --ext .ts",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles --runInBand --testTimeout=30000",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --detectOpenHandles --runInBand --testTimeout=30000",
     "coverage": "c8 npm run test && npm run lcov-report",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts",
     "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
