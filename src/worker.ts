@@ -14,7 +14,8 @@ import {
   orderingModule,
   ostorageModule,
   paymentModule,
-  schedulingModule
+  schedulingModule,
+  pdfRenderingModule,
 } from '@restorecommerce/facade';
 
 export class Worker {
@@ -56,6 +57,7 @@ export class Worker {
       .useModule(ostorageModule({config: this.cfg.get('ostorage')}))
       .useModule(paymentModule({config: this.cfg.get('payment')}))
       .useModule(schedulingModule({config: this.cfg.get('scheduling')}))
+      .useModule(pdfRenderingModule({config: this.cfg.get('pdf_rendering')}))
       .useMiddleware(reqResLogger({logger: this.logger}));
 
     return await this.facade.start();

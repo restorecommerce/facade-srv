@@ -90,6 +90,11 @@
       "address": "ostorage-srv:50051"
     }
   },
+  "pdf_rendering": {
+    "client": {
+      "address": "access-control-srv:50051"
+    }
+  },
   "events": {
     "kafka": {
       "kafka": {

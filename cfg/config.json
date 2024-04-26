@@ -83,6 +83,11 @@
       "address": "127.0.0.1:50066"
     }
   },
+  "pdf_rendering": {
+    "client": {
+      "address": "127.0.0.1:50067"
+    }
+  },
   "events": {
     "kafka": {
       "provider": "kafka",
