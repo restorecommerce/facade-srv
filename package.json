@@ -72,11 +72,10 @@
     "build": "npm-run-all lint build:clean build:es",
     "build:clean": "rimraf lib",
     "build:es": "esbuild ./src/start.ts --bundle --platform=node --outfile=lib/start.cjs --tree-shaking=true --sourcemap=inline",
-    "lcov-report": "nyc report --reporter=lcov",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec node --loader ts-node/esm ./src/start.ts",
     "lint": "eslint src --ext .ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules cross-env NODE_ENV=test jest --detectOpenHandles --runInBand --testTimeout=40000 --forceExit",
-    "coverage": "c8 npm run test && npm run lcov-report",
+    "coverage": "c8 npm run test",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts",
     "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
   },
