@@ -12,12 +12,7 @@
       "secret"
     ],
     "hostname": "0.0.0.0",
-    "port": 5000,
-    "kafka": {
-      "brokers": [
-        "localhost:29092"
-      ]
-    }
+    "port": 5000
   },
   "master_data": {
     "client": {
@@ -86,10 +81,9 @@
   "events": {
     "kafka": {
       "provider": "kafka",
-      "groupId": "facade-srv",
-      "clientId": "restorecommerce-facade-srv",
+      "groupId": "restore-facade-srv",
       "kafka": {
-        "clientId": "restorecommerce-facade-srv",
+        "clientId": "restore-facade-srv",
         "brokers": [
           "localhost:29092"
         ]

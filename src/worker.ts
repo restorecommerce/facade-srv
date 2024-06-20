@@ -1,8 +1,8 @@
 import { type ServiceConfig } from '@restorecommerce/service-config';
 import { type Logger } from 'winston';
 import {
-  createFacade,
   type Facade,
+  createFacade,
   reqResLogger,
   resourceModule,
   identityModule,
@@ -39,6 +39,7 @@ export class Worker {
       logger: this.logger,
       fileUploadOptions: this.cfg.get('fileUploadOptions'),
       jsonLimit: this.cfg.get('koa:bodyParser:jsonLimit'),
+      kafka: this.cfg.get('events:kafka'),
     })
       .useModule(identityModule({
         identitySrvClientConfig: this.cfg.get('identity').client,
