@@ -5,7 +5,7 @@ module.exports = {
   verbose: true,
   testEnvironment: 'node',
   collectCoverage: true,
-  coverageReporters: ["json", "html"],
+  coverageReporters: ["json", "text", "lcov"],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
   },
