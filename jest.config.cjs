@@ -16,7 +16,7 @@ module.exports = {
       {
         useESM: true,
         tsconfig: './tsconfig.test.json',
-        //isolatedModules: true
+        isolatedModules: true
       },
     ],
   },
