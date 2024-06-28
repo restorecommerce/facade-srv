@@ -19,7 +19,6 @@
       "address": "127.0.0.1:50053"
     }
   },
-  "apiKey": true,
   "identity": {
     "client": {
       "address": "127.0.0.1:50051"
@@ -89,12 +88,6 @@
         ]
       },
       "latestOffset": false,
-      "setApiKeyCommand": {
-        "messageObject": "io.restorecommerce.commandinterface.CommandRequest"
-      },
-      "setApiKeyResponse": {
-        "messageObject": "io.restorecommerce.commandinterface.CommandResponse"
-      },
       "configUpdateCommand": {
         "messageObject": "io.restorecommerce.commandinterface.CommandRequest"
       },
