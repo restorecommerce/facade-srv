@@ -74,7 +74,7 @@
     "build:es": "esbuild ./src/start.ts --bundle --platform=node --outfile=lib/start.cjs --tree-shaking=true --sourcemap=inline",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec node --loader ts-node/esm ./src/start.ts",
     "lint": "eslint src --ext .ts",
-    "test": "NODE_OPTIONS=--experimental-vm-modules cross-env NODE_ENV=test jest --detectOpenHandles --runInBand --testTimeout=40000 --forceExit",
+    "test": "NODE_OPTIONS=--experimental-vm-modules cross-env NODE_ENV=test jest",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts",
     "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
   },

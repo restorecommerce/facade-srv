@@ -2,7 +2,12 @@
 module.exports = {
   preset: 'ts-jest/presets/default-esm',
   resolver: 'ts-jest-resolver',
-  verbose: true,
+  verbose: false,
+  silent: true,
+  detectOpenHandles: true,
+  runInBand: true,
+  forceExit: true,
+  testTimeout: 40000,
   testEnvironment: 'node',
   collectCoverage: true,
   coverageReporters: ["json", "text", "lcov"],
