@@ -11,9 +11,9 @@ A microservice to serve as a facade for all other microservices.
 
 * Unified GraphQL API pane for the outside.
 * Universal reverse proxy for gRPC and GraphQL federation.
-* Generates requeist IDs which are passed downstream for tracing.
+* Generates request IDs which are passed downstream for tracing.
 * Auto generation of GraphQL API from gRPC protobuf service definitions.
-* API explorer via Apollo sandbox.
+* GraphQL API explorer via Apollo sandbox.
 * Authentication aginast Restorecommerce identity-srv via OIDC.
 * Built-in reverse proxy for REST access to the Restorecommerce ostorage-srv.
 
