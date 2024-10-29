@@ -6,3 +6,30 @@ https://coveralls.io/github/restorecommerce/facade-srv?branch=master[image:http:
 
 A microservice to serve as a facade for all other microservices.
 
+[#features]
+== Features
+
+* Unified GraphQL API pane for the outside.
+* Universal reverse proxy for gRPC and GraphQL federation.
+* Generates requeist IDs which are passed downstream for tracing.
+* Auto generation of GraphQL API from gRPC protobuf service definitions.
+* API explorer via Apollo sandbox.
+* Authentication aginast Restorecommerce identity-srv via OIDC.
+* Built-in reverse proxy for REST access to the Restorecommerce ostorage-srv.
+
+[#usage]
+== Usage
+
+[#usage_running_as_container]
+=== Running as Container
+
+[source,sh]
+----
+docker run -d -p 5000:5000 --name facade-srv ghcr.io/restorecommerce/facade-srv
+----
+
+[#path_map]
+=== Path Map
+
+* `/graphql`: GraphQL endpoint and API explorer
+* `/os`: REST based access to the ostorage-srv (object storage)
