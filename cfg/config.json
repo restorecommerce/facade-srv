@@ -17,7 +17,9 @@
   "master_data": {
     "client": {
       "address": "127.0.0.1:50053"
-    }
+    },
+    "namespace": "resource",
+    "root": false
   },
   "identity": {
     "client": {
@@ -75,7 +77,8 @@
   "ostorage": {
     "client": {
       "address": "127.0.0.1:50066"
-    }
+    },
+    "serviceKey": "ostorage"
   },
   "events": {
     "kafka": {
