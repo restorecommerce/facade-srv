@@ -26,6 +26,7 @@
     "yamlparser": "^0.0.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
     "@jest/globals": "^29.7.0",
@@ -66,7 +67,7 @@
     "build:es": "esbuild ./src/start.ts --bundle --platform=node --outfile=lib/start.cjs --tree-shaking=true --sourcemap=inline",
     "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec node --loader ts-node/esm ./src/start.ts",
     "lint": "eslint src --ext .ts",
-    "test": "NODE_OPTIONS=--experimental-vm-modules cross-env NODE_ENV=test jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules cross-env NODE_ENV=test jest --runInBand",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts",
     "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
   },

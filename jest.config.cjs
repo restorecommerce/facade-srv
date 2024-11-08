@@ -5,7 +5,6 @@ module.exports = {
   verbose: false,
   silent: true,
   detectOpenHandles: true,
-  runInBand: true,
   forceExit: true,
   testTimeout: 40000,
   testEnvironment: 'node',
