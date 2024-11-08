@@ -20,16 +20,9 @@
   "dependencies": {
     "@apollo/federation": "^0.38.1",
     "@apollo/gateway": "2.3.6",
-    "@restorecommerce/facade": "^2.2.2",
+    "@restorecommerce/facade": "^2.2.5",
     "@restorecommerce/logger": "^1.3.2",
-    "@restorecommerce/service-config": "^1.0.15",
-    "array.prototype.flat": "^1.3.2",
-    "bcryptjs": "^2.4.3",
-    "cross-env": "^7.0.3",
-    "ts-node": "^10.9.2",
-    "ts-proto-descriptors": "^1.15.0",
-    "uuid": "^10.0.0",
-    "winston": "^3.13.0",
+    "@restorecommerce/service-config": "^1.0.16",
     "yamlparser": "^0.0.2"
   },
   "devDependencies": {
