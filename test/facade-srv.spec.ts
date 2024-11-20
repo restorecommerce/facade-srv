@@ -1,10 +1,5 @@
-import { 
-  describe,
-  expect,
-  test
-} from '@jest/globals';
-import { type Worker } from '../src/worker.js';
-import { createTestWorker } from './worker.js';
+import { test, describe, expect } from 'vitest';
+import { createTestWorker, type Worker } from './worker.js';
 
 describe('facade-srv', () => {
   let worker: Worker;

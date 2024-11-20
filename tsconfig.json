@@ -1,14 +1,3 @@
 {
-  "extends": "./node_modules/@restorecommerce/dev/tsconfig.json",
-  "include": [
-    "./src/**/*.ts"
-  ],
-  "compilerOptions": {
-    "outDir": "lib"
-  },
-  "exclude": [
-    "node_modules",
-    "lib",
-    "doc"
-  ]
+  "extends": "./tsconfig-base.json"
 }

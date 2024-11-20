@@ -1,6 +1,7 @@
 import { createServiceConfig } from '@restorecommerce/service-config';
 import { createLogger } from '@restorecommerce/logger';
 import { Worker } from '../src/worker.js';
+export { Worker };
 
 export const createTestWorker = () => {
   const cfg = createServiceConfig(process.cwd());
