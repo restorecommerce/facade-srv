@@ -1,5 +1,5 @@
 import { type ServiceConfig } from '@restorecommerce/service-config';
-import { type Logger } from 'winston';
+import { type Logger } from '@restorecommerce/logger';
 import {
   type Facade,
   createFacade,
