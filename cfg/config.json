@@ -153,6 +153,11 @@
           "n": "mmf-00ifKZcEh87G9MkrVLa51QgAOQsjOvNGAM8xOSEmTbijIi2TK9q1L9Od4qoL8D2Zs6xV2XIVKmmVcXkvCxOfwitdfbdeCPf4-hW4hniXAXjGQ3mSGSaq_j5rEvEHJ0C5Uf0Ge7s2gu8TiuPIv99fQCXrAfeC5I5jPyWKql5qn6Glxhttjn0GW18N8d0LwqxddqMVHbIsw00bSdE3jaQVfPoQ473QjqRGfZMbsloY3AuXl8Ej-UfQ7zVAcjJSgwfAM22Ca0siRWrzB5rPMvVU8wMBzbsQorBHWtQJiLBbgAjgCpsdHt6bCGli0nmhUfDcD4R_Zw6wyhtfN9Rk0Q"
         }
       ]
+    },
+    "templates": {
+      "layout": "./templates/layout.hbs",
+      "login": "./templates/login.hbs",
+      "consent": "./templates/consent.hbs"
     }
   },
   "koa": {
