@@ -18,7 +18,7 @@
   "facade": {
     "kafka": {
       "brokers": [
-        "kafka:9092"
+        "kafka:29092"
       ]
     }
   },
@@ -99,7 +99,7 @@
     "kafka": {
       "kafka": {
         "brokers": [
-          "kafka:9092"
+          "kafka:29092"
         ]
       }
     }
