@@ -7,6 +7,7 @@ await esbuild.build({
   platform: 'node',
   outfile: 'lib/start.cjs',
   minify: true,
+  keepNames: true,
   treeShaking: true,
   sourcemap: 'linked',
   plugins: [commonifierPlugin],
