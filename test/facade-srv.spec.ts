@@ -1,5 +1,4 @@
 import { test, describe, expect } from 'vitest';
-import { agent } from 'supertest';
 import { createTestWorker, type Worker } from './worker.js';
 
 describe('facade-srv', () => {
