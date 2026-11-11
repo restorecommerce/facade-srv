@@ -1,2 +1,3 @@
-import config from '@restorecommerce/dev/eslint.config.js';
+// @ts-nocheck
+import config from '@restorecommerce/dev/eslint.config.mjs';
 export default config;

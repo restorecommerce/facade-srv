@@ -8,10 +8,12 @@ coverage/
 
 .git*
 
-*.cjs.map
+*.map
 *.log
 *~
 
 buildImage.bash
 Dockerfile
 .dockerignore
+lib/
+dist/

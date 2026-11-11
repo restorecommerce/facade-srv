@@ -11,6 +11,7 @@ pid/
 .idea
 
 lib
+dist
 
 *.log
 *~
