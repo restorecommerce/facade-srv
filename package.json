@@ -18,7 +18,7 @@
   ],
   "type": "module",
   "dependencies": {
-    "@restorecommerce/facade": "2.3.15",
+    "@restorecommerce/facade": "2.4.0",
     "@restorecommerce/logger": "1.4.4",
     "@restorecommerce/service-config": "1.2.4",
     "yamlparser": "^0.0.2"
@@ -44,9 +44,10 @@
     "clean": "rimraf dist lib coverage",
     "prebuild": "npm-run-all clean lint",
     "build": "node esbuild.mjs",
-    "dev": "cross-env NODE_ENV=development nodemon --watch './src/**/*.ts' --exec node --loader ts-node/esm ./src/start.ts",
+    "postbuild": "cp ./node_modules/@platformatic/wasm-utils/dist/native.wasm dist/",
+    "dev": "cross-env NODE_ENV=development node --watch dist/start.cjs",
     "pretest": "npm-run-all lint",
-    "test": "cross-env NODE_ENV=test vitest run",
+    "test": "vitest run",
     "postinstall": "rm -rf ./node_modules/@josephg/resolvable/index.ts"
   },
   "engines": {
